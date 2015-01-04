@@ -41,7 +41,7 @@
 			el.data( "Places" ).getById( view.params.id )
 				.then(function( data ) {
 					var place = data.result,
-						template = kendo.template( $( "#place-template" ).html() );
+						template = kendo.template( $( "#place-details-template" ).html() );
 
 					$( "#place" ).html( template( place ) );
 					view.element.find( "[data-role='view-title']" ).text( place.Name );
@@ -63,7 +63,7 @@
 
 		$( "#place-list" ).kendoMobileListView({
 			dataSource: placesData,
-			template: "<a href='\\#details?id=#: Id #'>#: Name #</a>"
+			template: $( "#place-template" ).html()
 		});
 	});
 }());

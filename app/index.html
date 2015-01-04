@@ -6,6 +6,7 @@
 	<title>Place of the Day</title>
 
 	<link href="bower_components/kendo-ui-core/styles/kendo.mobile.all.min.css" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
 </head>
 <body>
 
@@ -17,6 +18,12 @@
 	</header>
 	<ul data-role="listview" id="place-list">
 	</ul>
+	<script type="text/x-kendo-template" id="place-template">
+		<a href='\\#details?id=#: Id #'>
+			<p>#: Name #, #: Country #</p>
+			<p>#= kendo.toString( kendo.parseDate( PushDate ), "MMMM dd, yyyy" )#</p>
+		</a>
+	</script>
 </div>
 
 <div data-role="view" data-title="Loading..." id="details" data-show="detailsView.show" data-hide="detailsView.hide">
@@ -27,7 +34,7 @@
 		</div>
 	</header>
 	<div id="place"></div>
-	<script type="text/x-kendo-template" id="place-template">
+	<script type="text/x-kendo-template" id="place-details-template">
 		<h1>#= Name #</h1>
 		<p>#= Description #</p>
 		<div id="photos"></div>
