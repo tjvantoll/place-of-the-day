@@ -19,7 +19,7 @@
 	</ul>
 </div>
 
-<div data-role="view" data-title="Loading..." id="details" data-show="detailsShow" data-hide="detailsHide">
+<div data-role="view" data-title="Loading..." id="details" data-show="detailsView.show" data-hide="detailsView.hide">
 	<header data-role="header">
 		<div data-role="navbar">
 			<a data-align="left" data-role="backbutton">Back</a>
@@ -30,12 +30,15 @@
 	<script type="text/x-kendo-template" id="place-template">
 		<h1>#= Name #</h1>
 		<p>#= Description #</p>
+		<div id="photos"></div>
 	</script>
 </div>
 
 <script src="cordova.js"></script>
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/kendo-ui-core/js/kendo.ui.core.min.js"></script>
+
 <script src="js/everlive.all.min.js"></script>
 <script src="js/app.js"></script>
 
