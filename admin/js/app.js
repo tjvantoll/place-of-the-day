@@ -15,6 +15,8 @@
 						Country: {},
 						NameOrigin: {},
 						Description: {},
+						Latitude: { type: "number" },
+						Longitude: { type: "number" },
 						PushDate: { type: "date" }
 					}
 				}
@@ -40,6 +42,8 @@
 				field: "Description",
 				editor: textareaEditor
 			},
+			{ field: "Latitude" },
+			{ field: "Longitude" },
 			{
 				field: "PushDate",
 				format: "{0:MM/dd/yyyy}"
