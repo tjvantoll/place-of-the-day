@@ -33,7 +33,10 @@
 		navigator.splashscreen.hide();
 
 		var app = new kendo.mobile.Application( document.body, {
-			skin: "flat"
+			skin: "flat",
+			init: function() {
+				kendo.UserEvents.defaultThreshold( 20 );
+			}
 		});
 
 		$( "#place-list" ).kendoMobileListView({
