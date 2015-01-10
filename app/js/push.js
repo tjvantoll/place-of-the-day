@@ -13,22 +13,18 @@
 					projectNumber: "892866816570"
 				},
 				notificationCallbackIOS: function( e ) {
-					// logic for handling push in iOS
+					// Handle the push on iOS
 				},
 				notificationCallbackAndroid: function( e ) {
-					// logic for handling push in Android
+					// Handle the push for Android
 				},
 			},
 			function( data ) {
 				// This function will be called once the device is successfully registered
-				alert( "success" );
-				alert( JSON.stringify( data ) );
 			},
 			function( error ) {
 				// This callback will be called any errors occurred during the device
 				// registration process
-				alert( "error" );
-				alert( JSON.stringify( error ) );
 			}
 		);
 	};
