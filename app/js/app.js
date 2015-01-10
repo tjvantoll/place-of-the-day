@@ -1,7 +1,7 @@
 (function () {
 	"use strict";
 
-	var el = new Everlive( "lLGSjm76TzCGSDza" );
+	window.el = new Everlive( "lLGSjm76TzCGSDza" );
 
 	var placesData = new kendo.data.DataSource({
 		type: "everlive",
