@@ -11,6 +11,25 @@
 		sort: { field: "PushDate", dir: "desc" }
 	});
 
+	function scrapeWikipedia( url ) {
+		var promise = $.Deferred();
+		$.get( url ).then(function( data ) {
+			var parser = new DOMParser(),
+				htmlDoc = parser.parseFromString( data, "text/html" ),
+				toc = $( htmlDoc.getElementById( "toc" ) ),
+				description = "",
+				descriptionParagraphs = toc.prevAll( "p" );
+
+			descriptionParagraphs.find( ".reference" ).remove();
+
+			$( descriptionParagraphs.get().reverse() ).each(function() {
+				description += this.outerHTML;
+			});
+			promise.resolve({ description: description });
+		});
+		return promise;
+	}
+
 	window.detailsView = {
 		show: function ( event ) {
 			var view = event.view;
@@ -20,8 +39,11 @@
 					var place = data.result,
 						template = kendo.template( $( "#place-details-template" ).html() );
 
-					$( "#place" ).html( template( place ) );
-					view.element.find( "[data-role='view-title']" ).text( place.Name );
+					scrapeWikipedia( place.Wikipedia ).then(function( data ) {
+						place.Description = data.description;
+						$( "#place" ).html( template( place ) );
+						view.element.find( "[data-role='view-title']" ).text( place.Name );
+					});
 				});
 		},
 		hide: function() {
