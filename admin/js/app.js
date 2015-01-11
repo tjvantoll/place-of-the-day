@@ -13,20 +13,15 @@
 					fields: {
 						Name: {},
 						Country: {},
-						NameOrigin: {},
-						Description: {},
 						Latitude: { type: "number" },
 						Longitude: { type: "number" },
-						PushDate: { type: "date" }
+						Wikipedia: { type: "text" },
+						PushDate: { type: "date" },
 					}
 				}
 			},
 			sort: { field: "PushDate", dir: "desc" }
-		}),
-		textareaEditor = function( container, options ) {
-			$( "<textarea name='' data-bind='value:" + options.field + "' cols='20' rows='4'>" )
-				.appendTo( container );
-		};
+		});
 
 	$( "#place-grid" ).kendoGrid({
 		dataSource: placesData,
@@ -34,16 +29,9 @@
 		columns: [
 			{ field: "Name" },
 			{ field: "Country" },
-			{
-				field: "NameOrigin",
-				editor: textareaEditor
-			},
-			{
-				field: "Description",
-				editor: textareaEditor
-			},
 			{ field: "Latitude" },
 			{ field: "Longitude" },
+			{ field: "Wikipedia" },
 			{
 				field: "PushDate",
 				format: "{0:MM/dd/yyyy}"
