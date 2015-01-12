@@ -1,11 +1,11 @@
-define([ "everlive", "../wikipedia" ], function( el, wiki ) {
+define([ "api", "../wikipedia" ], function( api, wiki ) {
 	"use strict";
 
 	window.detailsView = {
 		show: function ( event ) {
 			var view = event.view;
 			view.element.find( "[data-role='view-title']" ).text( "Loading..." );
-			el.data( "Places" ).getById( view.params.id )
+			api.data( "Places" ).getById( view.params.id )
 				.then(function( data ) {
 					var place = data.result,
 						template = kendo.template( $( "#place-details-template" ).html() );

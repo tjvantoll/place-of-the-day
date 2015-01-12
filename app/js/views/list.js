@@ -1,4 +1,4 @@
-define(function() {
+define([ "api" ], function( api ) {
 	"use strict";
 
 	var placesData = new kendo.data.DataSource({

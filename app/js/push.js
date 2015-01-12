@@ -1,8 +1,8 @@
-define([ "everlive" ], function( el ) {
+define([ "api" ], function( api ) {
 	"use strict";
 
 	function registerForPush() {
-		el.push.register(
+		api.push.register(
 			{
 				iOS: {
 					badge: "true",

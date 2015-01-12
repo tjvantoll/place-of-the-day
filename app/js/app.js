@@ -1,9 +1,8 @@
 require([
-	"everlive",
 	"push",
 	"views/list",
 	"views/details" ],
-	function( el, push, list, details ) {
+	function( push, list, details ) {
 		"use strict";
 
 		document.addEventListener( "deviceready", function () {  
