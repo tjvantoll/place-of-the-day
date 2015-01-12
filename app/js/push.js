@@ -1,8 +1,8 @@
-(function() {
+define([ "everlive" ], function( el ) {
 	"use strict";
 
 	function registerForPush() {
-		window.el.push.register(
+		el.push.register(
 			{
 				iOS: {
 					badge: "true",
@@ -30,4 +30,4 @@
 	};
 
 	document.addEventListener( "deviceready", registerForPush );
-}());
+});
