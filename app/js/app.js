@@ -1,3 +1,21 @@
+require.config({
+	paths: {
+		"Everlive": "../bower_components/everlive/src/everlive",
+		"jquery": "../bower_components/jquery/dist/jquery",
+		"jstz": "../bower_components/everlive/src/jstz",
+		"kendo": "../bower_components/kendo-ui-core/src/js/kendo.ui.core",
+		"kendo.data.everlive": "../bower_components/everlive/src/kendo.data.everlive",
+		"reqwest": "../bower_components/everlive/src/reqwest",
+		"rsvp": "../bower_components/everlive/src/rsvp",
+		"underscore": "../bower_components/everlive/src/underscore"
+	},
+	shim: {
+		"underscore": {
+			exports: "_"
+		}
+	}
+});
+
 require([
 	"push",
 	"views/list",

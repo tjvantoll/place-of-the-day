@@ -1,7 +1,4 @@
-(function() {
+define([ "Everlive", "kendo.data.everlive" ], function( Everlive ) {
 	"use strict";
-	var api = new Everlive( "lLGSjm76TzCGSDza" );
-	define(function() {
-		return api;
-	});
-}());
+	return new Everlive( "lLGSjm76TzCGSDza" );
+});

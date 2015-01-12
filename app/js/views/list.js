@@ -1,6 +1,8 @@
 define([ "api" ], function( api ) {
 	"use strict";
 
+	console.log( window.Everlive );
+
 	var placesData = new kendo.data.DataSource({
 		type: "everlive",
 		transport: {
