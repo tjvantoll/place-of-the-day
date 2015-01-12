@@ -10,6 +10,9 @@ require.config({
 		"underscore": "../bower_components/everlive/src/underscore"
 	},
 	shim: {
+		"rsvp": {
+			exports: "RSVP"
+		},
 		"underscore": {
 			exports: "_"
 		}
@@ -17,6 +20,8 @@ require.config({
 });
 
 require([
+	"jquery",
+	"kendo",
 	"push",
 	"views/list",
 	"views/details" ],

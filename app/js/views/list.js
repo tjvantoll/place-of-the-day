@@ -9,8 +9,12 @@ define([ "api" ], function( api ) {
 		sort: { field: "PushDate", dir: "desc" }
 	});
 
-	$( "#place-list" ).kendoMobileListView({
-		dataSource: placesData,
-		template: $( "#place-template" ).html()
-	});
+	window.listView = {
+		init: function() {
+			$( "#place-list" ).kendoMobileListView({
+				dataSource: placesData,
+				template: $( "#place-template" ).html()
+			});
+		}
+	};
 })
