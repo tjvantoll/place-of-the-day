@@ -15,7 +15,8 @@
 						Country: {},
 						Latitude: { type: "number" },
 						Longitude: { type: "number" },
-						Wikipedia: { type: "text" },
+						Wikipedia: {},
+						TripAdvisor: {},
 						PushDate: { type: "date" },
 					}
 				}
@@ -32,6 +33,7 @@
 			{ field: "Latitude" },
 			{ field: "Longitude" },
 			{ field: "Wikipedia" },
+			{ field: "TripAdvisor" },
 			{
 				field: "PushDate",
 				format: "{0:MM/dd/yyyy}"
