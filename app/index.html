@@ -38,19 +38,23 @@
 	<script type="text/x-kendo-template" id="place-details-template">
 		<h1>#= Name #</h1>
 
-		<h3>Description</h3>
+		<img src="#= GoogleMapsURL #">
+
 		#= Description #
+
 		<p>
-			Source: Wikipedia<br>
-			<a href="#= Wikipedia #" target="_blank">Read the full article</a>
+			Source: Wikipedia (<a href="#= Wikipedia #" target="_blank">Read the full article</a>)
 		</p>
 
-		<h3>Flickr</h3>
+		<h3>Photos</h3>
 		<p>
-			<a href="https://m.flickr.com/\\#/search/advanced?q=#= Name #%2C%20#= Country #" target="_blank">Photos</a>
+			<a href="https://m.flickr.com/\\#/search/advanced?q=#= Name #%2C%20#= Country #" target="_blank">View photos of #= Name # on Flickr</a>
 		</p>
 
-		<!-- Trip Advisor? -->
+		<h3>Travel</h3>
+		<p>
+			<a href="#= TripAdvisor #" target="_blank">Look up #= Name # on Trip Advisor</a>
+		</p>
 	</script>
 </div>
 
