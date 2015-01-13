@@ -49,7 +49,12 @@ define(function() {
 					description += this.outerHTML;
 				});
 
-				description = removeFirstSetofParenthesis( description );
+				// Remove the speaker icon
+				if ( description.indexOf( "Speaker_Icon" ) > 0 ) {
+					while ( description.indexOf( "Speaker_Icon" ) > 0 ) {
+						description = removeFirstSetofParenthesis( description );
+					}
+				}
 
 				promise.resolve({ description: description });
 			});
