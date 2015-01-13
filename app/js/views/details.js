@@ -1,11 +1,13 @@
 define([ "api", "../wikipedia" ], function( api, wiki ) {
 	"use strict";
 
+	// https://developers.google.com/maps/documentation/staticmaps/
 	function buildGoogleMapsUrl( place ) {
 		return "https://maps.googleapis.com/maps/api/staticmap?" +
 			"center=" + place.Latitude + "," + place.Longitude +
 			"&zoom=6" +
 			"&size=" + window.innerWidth + "x250" +
+			"&scale=2" +
 			"&markers=color:red|" + place.Latitude + "," + place.Longitude +
 			"&key=AIzaSyCAhsJhH9bL5zUz1C_nDy3RFfEAZZd28x0";
 	};

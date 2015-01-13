@@ -38,7 +38,9 @@
 	<script type="text/x-kendo-template" id="place-details-template">
 		<h1>#= Name #</h1>
 
-		<img src="#= GoogleMapsURL #">
+		<a href="http://maps.apple.com/?q=#= Name #, #= Country #">
+			<img src="#= GoogleMapsURL #" style="height: 250px">
+		</a>
 
 		#= Description #
 
