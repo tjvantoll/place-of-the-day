@@ -1,4 +1,4 @@
-define(function() {
+define([ "jquery" ], function( $ ) {
 	"use strict";
 
 	function removeFirstSetofParenthesis( text ) {
@@ -7,13 +7,13 @@ define(function() {
 			found = 0;
 
 		for ( var i = 0; i < text.length; i++ ) {
-			if ( text.charAt( i ) == "(" ) {
+			if ( text.charAt( i ) === "(" ) {
 				if ( found === 0 ) {
 					start = i;
 				}
 				found++;
 			}
-			if ( text.charAt( i ) == ")" ) {
+			if ( text.charAt( i ) === ")" ) {
 				if ( found === 1 ) {
 					end = i;
 					break;
@@ -24,7 +24,7 @@ define(function() {
 
 		return text.substring( 0, start ) +
 			text.substring( end + 1, text.length );
-	};
+	}
 
 	return {
 		scrape: function( url ) {

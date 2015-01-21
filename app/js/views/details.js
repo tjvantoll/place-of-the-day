@@ -1,4 +1,4 @@
-define([ "api", "../wikipedia" ], function( api, wiki ) {
+define([ "jquery", "kendo", "api", "../wikipedia" ], function( $, kendo, api, wiki ) {
 	"use strict";
 
 	// https://developers.google.com/maps/documentation/staticmaps/
@@ -10,7 +10,7 @@ define([ "api", "../wikipedia" ], function( api, wiki ) {
 			"&scale=2" +
 			"&markers=color:red|" + place.Latitude + "," + place.Longitude +
 			"&key=AIzaSyCAhsJhH9bL5zUz1C_nDy3RFfEAZZd28x0";
-	};
+	}
 
 	window.detailsView = {
 		show: function ( event ) {

@@ -25,13 +25,13 @@ require([
 	"push",
 	"views/list",
 	"views/details" ],
-	function( $, kendo, push, list, details ) {
+	function( $, kendo ) {
 		"use strict";
 
 		document.addEventListener( "deviceready", function () {  
 			navigator.splashscreen.hide();
 
-			var app = new kendo.mobile.Application( document.body, {
+			new kendo.mobile.Application( document.body, {
 				skin: "flat",
 				init: function() {
 					kendo.UserEvents.defaultThreshold( 20 );

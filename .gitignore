@@ -3,3 +3,4 @@
 *.apk
 *.ipa
 *.xap
+node_modules/*
