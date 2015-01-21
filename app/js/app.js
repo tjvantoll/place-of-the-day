@@ -3,7 +3,7 @@ require.config({
 		"Everlive": "../bower_components/everlive/src/everlive",
 		"jquery": "../bower_components/jquery/dist/jquery",
 		"jstz": "../bower_components/everlive/src/jstz",
-		"kendo": "../bower_components/kendo-ui-core/src/js/kendo.ui.core",
+		"kendo": "../kendo/js/kendo.mobile.min",
 		"kendo.data.everlive": "../bower_components/everlive/src/kendo.data.everlive",
 		"reqwest": "../bower_components/everlive/src/reqwest",
 		"rsvp": "../bower_components/everlive/src/rsvp",
@@ -25,7 +25,7 @@ require([
 	"push",
 	"views/list",
 	"views/details" ],
-	function( push, list, details ) {
+	function( $, kendo, push, list, details ) {
 		"use strict";
 
 		document.addEventListener( "deviceready", function () {  
