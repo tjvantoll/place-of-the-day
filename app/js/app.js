@@ -28,7 +28,7 @@ require([
 	function( $, kendo ) {
 		"use strict";
 
-		document.addEventListener( "deviceready", function () {  
+		document.addEventListener( "deviceready", function() {
 			navigator.splashscreen.hide();
 
 			new kendo.mobile.Application( document.body, {

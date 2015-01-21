@@ -1,6 +1,7 @@
 var gulp = require( "gulp" ),
 	jshint = require( "gulp-jshint" ),
-	csslint = require( "gulp-csslint" );
+	csslint = require( "gulp-csslint" ),
+	jscs = require( "gulp-jscs" );
 
 gulp.task( "jshint", function() {
 	return gulp.src( "app/js/**/*.js" )
@@ -14,4 +15,9 @@ gulp.task( "csslint", function() {
 		.pipe( csslint.reporter() );
 });
 
-gulp.task( "default", [ "jshint", "csslint" ]);
+gulp.task( "jscs", function() {
+	gulp.src( "app/js/**/*.js" )
+		.pipe( jscs() )
+});
+
+gulp.task( "default", [ "jshint", "csslint", "jscs" ]);

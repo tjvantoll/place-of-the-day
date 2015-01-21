@@ -3,6 +3,7 @@
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-csslint": "^0.1.5",
+    "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.0"
   },
   "repository": {

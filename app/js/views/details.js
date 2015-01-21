@@ -13,7 +13,7 @@ define([ "jquery", "kendo", "api", "../wikipedia" ], function( $, kendo, api, wi
 	}
 
 	window.detailsView = {
-		show: function ( event ) {
+		show: function( event ) {
 			var view = event.view;
 			view.element.find( "[data-role='view-title']" ).text( "Loading..." );
 			api.data( "Places" ).getById( view.params.id )

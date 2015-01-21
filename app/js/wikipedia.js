@@ -4,9 +4,10 @@ define([ "jquery" ], function( $ ) {
 	function removeFirstSetofParenthesis( text ) {
 		var start,
 			end,
-			found = 0;
+			found = 0,
+			i = 0;
 
-		for ( var i = 0; i < text.length; i++ ) {
+		for ( ; i < text.length; i++ ) {
 			if ( text.charAt( i ) === "(" ) {
 				if ( found === 0 ) {
 					start = i;
