@@ -1,45 +1,45 @@
 {
-	"ProjectName": "Place of the Day",
-	"projectVersion": 1,
-	"AppIdentifier": "com.tjvantoll.placeoftheday",
-	"DisplayName": "PlaceOfTheDay",
-	"Author": "TJ VanToll",
-	"Description": "Learn about a new place around the world everyday",
-	"BundleVersion": "1.0",
-	"Framework": "Cordova",
-	"FrameworkVersion": "3.5.0",
-	"ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-	"CorePlugins": [
-		"org.apache.cordova.device",
-		"org.apache.cordova.dialogs",
-		"org.apache.cordova.globalization",
-		"org.apache.cordova.inappbrowser",
-		"org.apache.cordova.splashscreen"
-	],
-	"AndroidPermissions": [],
-	"DeviceOrientations": [
-		"Portrait",
-		"Landscape"
-	],
-	"AndroidHardwareAcceleration": "false",
-	"AndroidVersionCode": "1",
-	"iOSStatusBarStyle": "Default",
-	"iOSDeviceFamily": [
-		"1",
-		"2"
-	],
-	"iOSBackgroundMode": [],
-	"WP8TileTitle": "",
-	"WP8Publisher": "",
-	"WP8Capabilities": [],
-	"WP8Requirements": [],
-	"WP8SupportedResolutions": [
-		"ID_RESOLUTION_WVGA",
-		"ID_RESOLUTION_WXGA",
-		"ID_RESOLUTION_HD720P"
-	],
-	"CordovaPluginVariables": {},
-	"ProjectGuid": "{cf888ed2-5542-493a-b601-58fbc0f7995d}",
-	"WP8PublisherID": "{128cdb3e-5f34-40ff-b189-e9fdd0cd263f}",
-	"WP8ProductID": "{441d197d-2d46-41da-82a2-211a88627c71}"
+  "ProjectName": "Place of the Day",
+  "projectVersion": 1,
+  "AppIdentifier": "com.tjvantoll.placeoftheday",
+  "DisplayName": "PlaceOfTheDay",
+  "Author": "TJ VanToll",
+  "Description": "Learn about a new place around the world everyday",
+  "BundleVersion": "1.0",
+  "Framework": "Cordova",
+  "FrameworkVersion": "3.5.0",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "CorePlugins": [
+    "com.phonegap.plugins.PushPlugin",
+    "org.apache.cordova.device",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.globalization",
+    "org.apache.cordova.inappbrowser"
+  ],
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "AndroidVersionCode": "1",
+  "iOSStatusBarStyle": "Default",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CordovaPluginVariables": {},
+  "ProjectGuid": "{cf888ed2-5542-493a-b601-58fbc0f7995d}",
+  "WP8PublisherID": "{128cdb3e-5f34-40ff-b189-e9fdd0cd263f}",
+  "WP8ProductID": "{441d197d-2d46-41da-82a2-211a88627c71}"
 }
