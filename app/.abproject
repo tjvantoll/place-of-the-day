@@ -2,7 +2,7 @@
 	"ProjectName": "Place of the Day",
 	"projectVersion": 1,
 	"AppIdentifier": "com.tjvantoll.placeoftheday",
-	"DisplayName": "PlaceOfTheDay",
+	"DisplayName": "DailyPlace",
 	"Author": "TJ VanToll",
 	"Description": "Learn about a new place around the world everyday",
 	"BundleVersion": "1.0",
