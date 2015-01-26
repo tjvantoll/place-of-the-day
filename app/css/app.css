@@ -1,6 +1,10 @@
-body.km-on-ios {
+.km-on-ios {
 	margin-top: 20px;
 }
+.source {
+	font-style: italic;
+}
+
 h3 {
 	text-decoration: underline;
 }

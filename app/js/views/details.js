@@ -1,4 +1,4 @@
-define([ "jquery", "kendo", "api", "../wikipedia" ], function( $, kendo, api, wiki ) {
+define([ "jquery", "kendo", "api" ], function( $, kendo, api ) {
 	"use strict";
 
 	// https://developers.google.com/maps/documentation/staticmaps/
@@ -21,12 +21,8 @@ define([ "jquery", "kendo", "api", "../wikipedia" ], function( $, kendo, api, wi
 					var place = data.result,
 						template = kendo.template( $( "#place-details-template" ).html() );
 					place.GoogleMapsURL = buildGoogleMapsUrl( place );
-
-					wiki.scrape( place.Wikipedia ).then(function( data ) {
-						place.Description = data.description;
-						$( "#place" ).html( template( place ) );
-						view.element.find( "[data-role='view-title']" ).text( place.Name );
-					});
+					$( "#place" ).html( template( place ) );
+					view.element.find( "[data-role='view-title']" ).text( place.Name );
 				});
 		},
 		hide: function() {
