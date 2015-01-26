@@ -1,11 +1,1 @@
-{
-  "CordovaPluginVariables": {},
-  "CorePlugins": [
-    "com.phonegap.plugins.PushPlugin",
-    "org.apache.cordova.device",
-    "org.apache.cordova.dialogs",
-    "org.apache.cordova.globalization",
-    "org.apache.cordova.inappbrowser",
-    "org.apache.cordova.splashscreen"
-  ]
-}
+{"CordovaPluginVariables":{},"CorePlugins":["com.phonegap.plugins.PushPlugin","org.apache.cordova.device","org.apache.cordova.dialogs","org.apache.cordova.globalization","org.apache.cordova.inappbrowser","org.apache.cordova.splashscreen"]}
