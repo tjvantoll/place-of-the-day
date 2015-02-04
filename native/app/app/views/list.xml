@@ -1,0 +1,12 @@
+<Page navigatedTo="load">
+	<GridPanel>
+		<ListView items="{{ places }}">
+			<ListView.itemTemplate>
+				<StackPanel>
+					<Label text="{{ Name + ', ' + Country }}" />
+					<Label text="{{ PushDate }}" />
+				</StackPanel>
+			</ListView.itemTemplate>
+		</ListView>
+	</GridPanel>
+</Page>

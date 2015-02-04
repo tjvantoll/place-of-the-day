@@ -4,3 +4,4 @@
 *.ipa
 *.xap
 */node_modules/
+native/platforms/

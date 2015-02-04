@@ -1,0 +1,9 @@
+{
+	"id": "com.tjvantoll.placeoftheday",
+	"tns-ios": {
+		"version": "0.4.2"
+	},
+	"tns-android": {
+		"version": "0.4.2"
+	}
+}
