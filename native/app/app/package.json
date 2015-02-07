@@ -1,5 +1,5 @@
 {
-  "name": "Place of the Day",
+  "name": "place-of-the-day",
   "main": "app.js",
   "version": "0.4.2",
   "description": "Learn about a new place everyday!",

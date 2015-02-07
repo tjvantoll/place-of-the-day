@@ -1,5 +1,5 @@
 <Page navigatedTo="load">
 	<StackPanel>
-		<Label text="hi" />
+		<Label text="{{ Name + ', ' + Country }}" />
 	</StackPanel>
 </Page>
