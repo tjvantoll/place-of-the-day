@@ -1,0 +1,5 @@
+<Page navigatedTo="load">
+	<StackPanel>
+		<Label text="hi" />
+	</StackPanel>
+</Page>

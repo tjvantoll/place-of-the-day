@@ -1,6 +1,6 @@
 <Page navigatedTo="load">
 	<GridPanel>
-		<ListView items="{{ places }}">
+		<ListView items="{{ places }}" itemTap="details">
 			<ListView.itemTemplate>
 				<StackPanel>
 					<Label text="{{ Name + ', ' + Country }}" />

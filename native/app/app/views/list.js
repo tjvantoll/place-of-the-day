@@ -1,4 +1,5 @@
-var observableModule = require( "data/observable" ),
+var frameModule = require( "ui/frame" ),
+	observableModule = require( "data/observable" ),
 	observableArray = require( "data/observable-array" ),
 	el = require( "../models/el" ),
 	moment = require( "../node_modules/moment/moment" ),
@@ -10,6 +11,9 @@ data.set( "places", places );
 exports.load = function( args ) {
 	args.object.bindingContext = data;
 
+	while( places.length ) {
+		places.pop();
+	}
 	el.data( "Places" ).get().then(function( data ) {
 		data.result.forEach(function( place ) {
 			place.PushDate = moment( place.PushDate )
@@ -17,4 +21,8 @@ exports.load = function( args ) {
 			places.push( place );
 		});
 	});
+};
+
+exports.details = function( args ) {
+	frameModule.topmost().navigate( "app/views/details" );
 };
