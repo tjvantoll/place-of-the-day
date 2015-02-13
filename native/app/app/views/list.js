@@ -1,3 +1,5 @@
+var application = require( "application" );
+
 var frameModule = require( "ui/frame" ),
 	observableModule = require( "data/observable" ),
 	el = require( "../models/el" ),
