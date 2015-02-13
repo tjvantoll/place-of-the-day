@@ -7,7 +7,8 @@ exports.load = function( args ) {
 
 exports.loadMap = function( args ) {
 	var iosView = args.object.ios,
-		map = MKMapView.alloc().initWithFrame( CGRectMake( 0, 0, 1000, 1000 ) );
+		map = MKMapView.alloc().initWithFrame(
+			CGRectMake( 0, 0, UIScreen.mainScreen().bounds.size.width, 200 ) );
 
 	iosView.addSubview( map );
 }
