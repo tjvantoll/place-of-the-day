@@ -1,8 +1,9 @@
-var loadedMap;
+var loadedMap,
+	place;
 
 exports.load = function( args ) {
-	var place = args.context,
-		page = args.object;
+	var page = args.object;
+	place = args.context,
 
 	page.ios.title = place.Name + ", " + place.Country;
 	loadedMap = false;
@@ -13,11 +14,14 @@ exports.loadMap = function( args ) {
 		return;
 	}
 
+	console.log( place.Latitude );
+	console.log( place.Longitude );
+
 	var iosView = args.object.ios,
 		map = MKMapView.alloc().initWithFrame(
 			 CGRectMake( 0, 0, UIScreen.mainScreen().bounds.size.width, 200 ) ),
 			// UIScreen.mainScreen().bounds ),
-		location = CLLocationCoordinate2DMake( 42.7, 23.3247 ),
+		location = CLLocationCoordinate2DMake( place.Latitude, place.Longitude ),
 		span = new MKCoordinateSpan({ latitudeDelta: 0.3, longitudeDelta: 0.3 }),
 		region = new MKCoordinateRegion({ center: location, span: span });
 
