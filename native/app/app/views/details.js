@@ -14,9 +14,6 @@ exports.loadMap = function( args ) {
 		return;
 	}
 
-	console.log( place.Latitude );
-	console.log( place.Longitude );
-
 	var iosView = args.object.ios,
 		map = MKMapView.alloc().initWithFrame(
 			 CGRectMake( 0, 0, UIScreen.mainScreen().bounds.size.width, 200 ) ),
