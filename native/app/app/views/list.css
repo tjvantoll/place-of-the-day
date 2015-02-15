@@ -1,9 +1,12 @@
 GridPanel {
 	background-color: white;
 }
-Label {
+StackPanel {
 	margin: 10;
 }
-TextField {
-	margin: 10;
+Label {
+	margin: 5;
+}
+.heading {
+	font-size: 20;
 }

@@ -3,7 +3,7 @@
 		<ListView items="{{ places }}" itemTap="details">
 			<ListView.itemTemplate>
 				<StackPanel>
-					<Label text="{{ Name + ', ' + Country }}" />
+					<Label cssClass="heading" text="{{ Name + ', ' + Country }}" />
 					<Label text="{{ PushDate }}" />
 				</StackPanel>
 			</ListView.itemTemplate>
