@@ -12,9 +12,10 @@ data.set( "places", places );
 exports.load = function( args ) {
 	args.object.bindingContext = data;
 
-	// Empty the array for subsequent visits
-	while ( places.length ) {
-		places.pop();
+	// For now don't bother retrieving the list twice. This will have to 
+	// use a smarter cache strategy eventually.
+	if ( places.length ) {
+		return;
 	}
 
 	el.data( "Places" ).get().then(function( data ) {
