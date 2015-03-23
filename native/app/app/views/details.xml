@@ -1,7 +1,0 @@
-<Page navigatedTo="load">
-	<StackPanel loaded="loadMap">
-		<!-- TODO: Switch to {{ mapUrl }} after the http://www.telerik.com/forums/data-binding-and-urls-don't-work is resolved -->
-		<!-- TODO: Inject size and center -->
-		<Image url="http://maps.googleapis.com/maps/api/staticmap?center=42.69751,23.32415&zoom=6&size=320x250&scale=2&key=AIzaSyCAhsJhH9bL5zUz1C_nDy3RFfEAZZd28x0" />
-	</StackPanel>
-</Page>
