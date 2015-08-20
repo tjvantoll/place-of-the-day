@@ -1,0 +1,21 @@
+.source {
+	font-style: italic;
+}
+h3 {
+	text-decoration: underline;
+}
+p {
+	line-height: 1.4;
+}
+.km-nova h1 {
+	font-size: 2em;
+	margin: 1rem;
+}
+.km-nova h3 {
+	margin: 1rem;
+	font-size: 1.8em;
+}
+.km-nova p {
+	font-size: 1em;
+	margin: 1rem;
+}

@@ -3,5 +3,4 @@
 *.apk
 *.ipa
 *.xap
-*/node_modules/
-native/platforms/
+node_modules/

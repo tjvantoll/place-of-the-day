@@ -30,12 +30,8 @@ require([
 
 		document.addEventListener( "deviceready", function() {
 			navigator.splashscreen.hide();
-
 			new kendo.mobile.Application( document.body, {
-				skin: "flat",
-				init: function() {
-					kendo.UserEvents.defaultThreshold( 20 );
-				}
+				skin: "nova"
 			});
 		});
 	}

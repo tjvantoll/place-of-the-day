@@ -35,5 +35,7 @@
 	"ProjectGuid": "{cf888ed2-5542-493a-b601-58fbc0f7995d}",
 	"WP8PublisherID": "{128cdb3e-5f34-40ff-b189-e9fdd0cd263f}",
 	"WP8ProductID": "{441d197d-2d46-41da-82a2-211a88627c71}",
-	"CorePlugins": []
+	"CorePlugins": [],
+	"WP8PackageIdentityName": "1234Telerik.com.tjvantoll.placeoftheday",
+	"WP8WindowsPublisherName": "CN=Telerik"
 }
